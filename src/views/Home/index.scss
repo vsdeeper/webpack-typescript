@@ -1,0 +1,11 @@
+.hello {
+  display: flex;
+  flex-direction: column;
+  color: red;
+  transform: scale(1);
+  .word {
+    display: flex;
+    color: green;
+    background: url('@/assets/img/logo.png');
+  }
+}
