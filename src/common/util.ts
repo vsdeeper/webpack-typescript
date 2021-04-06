@@ -8,3 +8,10 @@ export function initialToLowercase (str: string): string {
   }
   return 'unkown'
 }
+/**
+ * 对象类型检查
+ * @params { obj: 检查对象 }
+ */
+export function isObject(obj: any) {
+  return Object.prototype.toString.call(obj) === '[object Object]'
+}
