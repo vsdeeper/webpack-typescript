@@ -9,7 +9,8 @@ export class Home extends Class.Page {
   }
   data () {
     return {
-      pageName: '加载中...'
+      pageName: '加载中...',
+      list: []
     }
   }
   goto (href: string) {
@@ -36,4 +37,6 @@ const selfVue = new BothWay(data, el, 'pageName')
 
 setTimeout(() => {
   selfVue.data.pageName = '我是首页'
+  selfVue.data.list.push(1)
+  console.log(data)
 }, 3000)
