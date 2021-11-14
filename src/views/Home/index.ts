@@ -1,3 +1,4 @@
+import '@/common/rem.js'
 import '@/assets/style/global.scss'
 import './index.scss'
 import { Class, Observe, Watcher } from '@/common'
@@ -40,3 +41,21 @@ setTimeout(() => {
   selfVue.data.list.push(1)
   console.log(data)
 }, 3000)
+
+const dddd = [1, 1]
+
+const ddd = new Set(dddd)
+console.log([...ddd])
+
+setTimeout(() => {
+  console.log(1)
+});
+new Promise<void>(resolve => {
+  resolve()
+  console.log(2)
+}).then(() => {
+  console.log(3)
+})
+console.log(4)
+
+console.log(document.getElementsByTagName('head'))
